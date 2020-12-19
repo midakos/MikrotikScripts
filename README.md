@@ -1,3 +1,5 @@
 #Those are scripts for mikrotik
 
-Its better to use WinBox!
+You have to set up your email in winbox
+
+
