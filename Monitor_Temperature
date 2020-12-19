@@ -1,0 +1,6 @@
+:global tcasinha [/system health get temperature]
+:local emessage ("Temperature is " . [:pick $tcasinha 0 2] . "." . [:pick $tcasinha 2 3])
+:if ($tcasinha >= 55) do={
+:log info $tcasinha
+/tool e-mail send to="myself@something.com" subject="Mikrotik Home Temperature" body=$emessage start-tls=yes
+}
